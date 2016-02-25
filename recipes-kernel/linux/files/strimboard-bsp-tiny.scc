@@ -1,0 +1,9 @@
+define KMACHINE strimboard-bsp
+
+define KARCH arm
+
+include ktypes/tiny/tiny.scc
+define KTYPE standard/base
+branch strimboard-bsp
+
+include strimboard-bsp.scc
