@@ -1,1 +1,1 @@
-meta-strimboard-bsp
+meta-bars3000-bsp
