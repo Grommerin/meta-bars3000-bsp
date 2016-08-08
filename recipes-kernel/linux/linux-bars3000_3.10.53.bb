@@ -10,15 +10,11 @@ SUMMARY = "Linux kernel for Boundary Devices boards"
 SRC_URI = "git://github.com/grommerin/linux-imx6.git;branch=${SRCBRANCH} \
            file://defconfig \
            file://imx6q-bars3000.dts \
-           file://imx6qdl.dtsi \
-           file://replace_flexcan_driver.patch \
            file://mxc_iomux_add_set_gpr_register_function.patch \
 "
 
 do_compile_prepend () {
 	cp ${WORKDIR}/imx6q-bars3000.dts \
-	${S}/arch/${ARCH}/boot/dts
-	cp ${WORKDIR}/imx6qdl.dtsi \
 	${S}/arch/${ARCH}/boot/dts
 }
 
